@@ -7,12 +7,12 @@ Winner of 2nd Place Finalist in the Science Track.
 ### Introduction
 
 Diabetes is one of the most prevalent diseases that affects many people yearly. 
-However, according to “Unequal Treatment: Confronting Racial and Ethnic Disparities in Health Care,” there is evidence demonstrating the unequal medical treatment towards racial minorities compared to whites in the U.S. healthcare system. 
+However, according to “Unequal Treatment: Confronting Racial and Ethnic Disparities in Health Care,”<sup>[1]</sup> there is evidence demonstrating the unequal medical treatment towards racial minorities compared to whites in the U.S. healthcare system. 
 
-Furthermore, Penner et al. report that “on average, White, Hispanic, and Asian physicians all display relatively large implicit racial preferences for Whites over Blacks.
+Furthermore, Penner et al.<sup>[1]</sup> report that “on average, White, Hispanic, and Asian physicians all display relatively large implicit racial preferences for Whites over Blacks.
 Physicians also hold implicit stereotypes, characterizing Whites as more compliant and ‘better patients’ than Blacks.” 
 This led us to want to verify these studies by finding evidence in the CDC Chronic Disease dataset. 
-Further studies found that “African Americans, Hispanics, and Native Americans are 50-100% more likely to experience an illness or mortality from diabetes than white Americans” (Chow et al., 2012). 
+Further studies found that “African Americans, Hispanics, and Native Americans are 50-100% more likely to experience an illness or mortality from diabetes than white Americans” (Chow et al., 2012)<sup>[2]</sup>. 
 
 Due to this fact, we wanted to focus our research towards disparities between African Americans and other races. 
 We also chose to limit our data analysis to normalized mortality rates as this metric is more robust to the influence of confounding factors and bypasses established evidence that, according to the Mayo Clinic, African Americans are more likely to contract diabetes, although there is not yet evidence that they are more at risk to die from it.
@@ -382,3 +382,6 @@ We also recognize limitations of our study, as there are variables in the datase
 1. Edward A. Chow, MD, Henry Foster, MD, Victor Gonzalez, MD and LaShawn McIver, MD, MPH. The Disparate Impact of Diabetes on Racial/Ethnic Minority Populations.
 Clinical Diabetes 2012 Jul; 30(3): 130-133. https://doi.org/10.2337/diaclin.30.3.130
 1. Penner, L. A., Blair, I. V., Albrecht, T. L., & Dovidio, J. F. (2014). Reducing Racial Health Care Disparities: A Social Psychological Analysis. Policy Insights from the Behavioral and Brain Sciences, 1(1), 204–212. https://doi.org/10.1177/2372732214548430
+
+[1]: https://doi.org/10.2337/diaclin.30.3.130
+[2]: https://doi.org/10.1177/2372732214548430
