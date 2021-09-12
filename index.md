@@ -45,58 +45,40 @@ One challenge we encountered was when we were trying to delete rows that contain
 We resolved this issue by using `.dropna(subset=[‘DataValue, ‘DataValueAlt], how = ‘all’)` to delete NaN values that are in that subset. 
 
 
-### EDA Visualizations
+### Exploratory Data Analysis
 
 <table align="center">
-  <thead>
+  <thead align="center">
     <tr>
       <th>
-        Overall Stratification
-      </th>
-      <th>
-        Black, not Hispanic Stratification
+        Overall Stratification vs. Black, not Hispanic Stratification (hover-over)
       </th>
     </tr>
   </thead>
-  <tbody>
+  <tbody align="center">
     <tr>
       <td>
-        <img height="432" src="/datahacks2020/images/overallmap2010.png" title="Overall Diabetes Mortality in 2010.">
-      </td>
-      <td>
-        <img height="432" src="/datahacks2020/images/bnhmap2010.png" title="Black, not Hispanic Diabetes Mortality in 2010.">
+        <img src="/datahacks2020/images/overallmap2010.png" title="Diabetes Mortality Map Comparison in 2010." onmouseover="this.src='/datahacks2020/images/bnhmap2010.png';" onmouseout="this.src='/datahacks2020/images/overallmap2010.png';" width="auto">
       </td>
     </tr>
     <tr>
       <td>
-        <img height="432" src="/datahacks2020/images/overallmap2011.png" title="Overall Diabetes Mortality in 2011.">
-      </td>
-      <td>
-        <img height="432" src="/datahacks2020/images/bnhmap2011.png" title="Black, not Hispanic Diabetes Mortality in 2011.">
+        <img src="/datahacks2020/images/overallmap2011.png" title="Diabetes Mortality Map Comparison in 2011." onmouseover="this.src='/datahacks2020/images/bnhmap2011.png';" onmouseout="this.src='/datahacks2020/images/overallmap2011.png';" width="auto">
       </td>
     </tr>
     <tr>
       <td>
-        <img height="432" src="/datahacks2020/images/overallmap2012.png" title="Overall Diabetes Mortality in 2012.">
-      </td>
-      <td>
-        <img height="432" src="/datahacks2020/images/bnhmap2012.png" title="Black, not Hispanic Diabetes Mortality in 2012.">
+        <img src="/datahacks2020/images/overallmap2012.png" title="Diabetes Mortality Map Comparison in 2012." onmouseover="this.src='/datahacks2020/images/bnhmap2012.png';" onmouseout="this.src='/datahacks2020/images/overallmap2012.png';" width="auto">
       </td>
     </tr>
     <tr>
       <td>
-        <img height="432" src="/datahacks2020/images/overallmap2013.png" title="Overall Diabetes Mortality in 2013.">
-      </td>
-      <td>
-        <img height="432" src="/datahacks2020/images/bnhmap2013.png" title="Black, not Hispanic Diabetes Mortality in 2013.">
+        <img src="/datahacks2020/images/overallmap2013.png" title="Diabetes Mortality Map Comparison in 2013." onmouseover="this.src='/datahacks2020/images/bnhmap2013.png';" onmouseout="this.src='/datahacks2020/images/overallmap2013.png';" width="auto">
       </td>
     </tr>
     <tr>
       <td>
-        <img height="432" src="/datahacks2020/images/overallmap2014.png" title="Overall Diabetes Mortality in 2014.">
-      </td>
-      <td>
-        <img height="432" src="/datahacks2020/images/bnhmap2014.png" title="Black, not Hispanic Diabetes Mortality in 2014.">
+        <img src="/datahacks2020/images/overallmap2014.png" title="Diabetes Mortality Map Comparison in 2014." onmouseover="this.src='/datahacks2020/images/bnhmap2014.png';" onmouseout="this.src='/datahacks2020/images/overallmap2014.png';" width="auto">
       </td>
     </tr>
   </tbody>
@@ -110,16 +92,15 @@ We resolved this issue by using `.dropna(subset=[‘DataValue, ‘DataValueAlt],
 
 Looking at the Diabetes question, “Mortality due to diabetes reported as any listed cause of death”, across 2010 to 2014, we saw that there was a significant increase in this statistic in the African-American, or `Black, non-Hispanic`, stratification across the entire United States. We used the Plotly Express library to create choropleths of the age-adjusted diabetes mortality rate, comparing the overall and African-American stratifications. Looking at the choropleths, we can see there is a clear difference between the two stratifications. African-Americans seem to be dying from diabetes at a higher rate across the country.
 
-
 <table align="center">
-  <thead>
+  <thead align="center">
     <tr>
       <th>
         Overall vs. Black, not Hispanic Mortality Rates Across Diseases (p < 0.05)
       </th>
     </tr>
   </thead>
-  <tbody>
+  <tbody align="center">
     <tr>
       <td>
         <img height="432" src="/datahacks2020/images/diabetesmortality.png" title="Diabetes Mortality Comparison.">
@@ -313,32 +294,32 @@ We then used Matplotlib to plot the top 3 most frequent words in the four topics
 
 
 <table align="center">
-  <thead>
+  <thead align="center">
     <tr>
       <th>
         Top 3 Most Frequent Words
       </th>
     </tr>
   </thead>
-  <tbody>
+  <tbody align="center">
     <tr>
       <td>
-        <img height="432" src="/datahacks2020/images/top3diabetes.png" title="Top 3 Words in Diabetes Surveys.">
+        <img height="300" src="/datahacks2020/images/top3diabetes.png" title="Top 3 Words in Diabetes Surveys.">
       </td>
     </tr>
     <tr>
       <td>
-        <img height="432" src="/datahacks2020/images/top3chronickidney.png" title="Top 3 Words in Chronic Kidney Disease Surveys.">
+        <img height="300" src="/datahacks2020/images/top3chronickidney.png" title="Top 3 Words in Chronic Kidney Disease Surveys.">
       </td>
     </tr>
     <tr>
       <td>
-        <img height="432" src="/datahacks2020/images/top3overarching.png" title="Top 3 Words in Overarching Conditions Surveys.">
+        <img height="300" src="/datahacks2020/images/top3overarching.png" title="Top 3 Words in Overarching Conditions Surveys.">
       </td>
     </tr>
     <tr>
       <td>
-        <img height="432" src="/datahacks2020/images/top3cardiovascular.png" title="Top 3 Words in Cardiovascular Disease Surveys.">
+        <img height="300" src="/datahacks2020/images/top3cardiovascular.png" title="Top 3 Words in Cardiovascular Disease Surveys.">
       </td>
     </tr>
   </tbody>
@@ -368,7 +349,7 @@ African Americans have a higher mean Age-adjusted Rate of diabetes than the popu
 #### Analysis
 
 <p align="center">
-  <img height="432" src="/datahacks2020/images/diabetesmortalityrate.png" title="Black, non-Hispanic vs Overall Diabetes Mortality Rates.">
+  <img height="512" src="/datahacks2020/images/diabetesmortalityrate.png" title="Black, non-Hispanic vs Overall Diabetes Mortality Rates.">
   <br>
   <em>Figure 4. Black, non-Hispanic vs Overall Diabetes Mortality Rates.</em>
 </p>
